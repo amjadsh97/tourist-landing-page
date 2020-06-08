@@ -1,0 +1,62 @@
+$light-black: #303134;
+
+
+@mixin flexItemsCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family: Poppins;
+}
+
+.wrapper {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    color: chocolate;
+}
+
+.logo-link__img {
+    display: inline-block;
+}
+
+.nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header--content {
+    @include flexItemsCenter(row);
+}
+
+.nav-list {
+    @include flexItemsCenter(row);
+}
+
+.nav-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $light-black;
+    padding: 10px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.section {
+    background: linear-gradient(to right, rgba(8, 174, 234, 0.5), rgba(42, 245, 152, 0.46)),
+    url('../images/hero-img.png') no-repeat;
+    background-size: cover;
+    min-height: 400px;
+}
