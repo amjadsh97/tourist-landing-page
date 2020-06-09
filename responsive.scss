@@ -1,0 +1,33 @@
+$smallScreensBreakpoints: 1500px;
+$tabletBreakpoints: 700px;
+$phoneBreakpoints: 500px;
+
+@import "main.scss";
+@media (max-width: $smallScreensBreakpoints) {
+    .section, .header {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: $tabletBreakpoints) {
+    .header--content {
+        @include flexItemsCenter(column);
+        align-items: flex-start;
+    }
+    .nav-list {
+
+    }
+}
+
+@media (max-width: $phoneBreakpoints) {
+    .header--content {
+        @include flexItemsCenter(column);
+        align-items: flex-start;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
