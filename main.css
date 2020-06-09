@@ -51,6 +51,11 @@ h1 {
 }
 
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.section--hero {
   background: linear-gradient(to right, rgba(8, 174, 234, 0.5), rgba(42, 245, 152, 0.46)), url("images/hero-img.png") no-repeat;
   background-size: cover;
   min-height: 500px;
