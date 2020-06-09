@@ -54,4 +54,37 @@
   line-height: 1.2;
 }
 
+.section--data {
+  background: url("images/advertisment-background.png") no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  background-color: #6d6d6d;
+  background-blend-mode: multiply;
+}
+
+.data-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  height: 500px;
+}
+
+.data-content__title {
+  color: #ffffff;
+}
+
+.data-content__sub-title {
+  color: #ffffff;
+}
+
+.c-image {
+  display: block;
+}
+
 /*# sourceMappingURL=sections.css.map */

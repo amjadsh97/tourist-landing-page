@@ -64,6 +64,8 @@ h1 {
     url('images/hero-img.png') no-repeat;
     background-size: cover;
     min-height: $hero-height;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .section-sub-wrapper {

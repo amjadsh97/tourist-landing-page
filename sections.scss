@@ -1,4 +1,14 @@
 $descriptionColor: #8D8D8D;
+$light-black: #303134;
+$hero-height: 500px;
+
+
+@mixin flexItemsCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .categories--wrapper {
     display: flex;
@@ -7,7 +17,7 @@ $descriptionColor: #8D8D8D;
 .section-cards-desc__title {
     text-transform: uppercase;
     color: #8D8D8D;
-    font-weight: 600 ;
+    font-weight: 600;
     font-size: 14px;
 }
 
@@ -55,3 +65,47 @@ $descriptionColor: #8D8D8D;
     letter-spacing: 0.5px;
     line-height: 1.2;
 }
+
+.section--data {
+    background: url('images/advertisment-background.png') no-repeat;
+    background-size: cover;
+    min-height: $hero-height;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+    background-color: #6d6d6d;
+    background-blend-mode: multiply;
+}
+
+//.section--data::after {
+//    display: block;
+//    content: "";
+//    position: absolute;
+//    top: 0;
+//    left: 0;
+//    right: 0;
+//    bottom: 0;
+//    background-color: #2F2F2F;
+//    opacity: 0.6;
+//    z-index: 1;
+//}
+
+.data-content {
+    @include flexItemsCenter(column);
+    position: relative;
+    z-index: 1;
+    height: $hero-height;
+}
+
+.data-content__title {
+    color: #ffffff;
+}
+
+.data-content__sub-title {
+    color: #ffffff;
+}
+
+.c-image {
+    display: block;
+}
+
