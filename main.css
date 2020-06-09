@@ -1,9 +1,9 @@
 body {
-  font-family: Poppins;
+  font-family: Raleway;
 }
 
 .wrapper {
-  max-width: 1250px;
+  max-width: 1450px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
@@ -51,9 +51,72 @@ h1 {
 }
 
 .section {
-  background: linear-gradient(to right, rgba(8, 174, 234, 0.5), rgba(42, 245, 152, 0.46)), url("../images/hero-img.png") no-repeat;
+  background: linear-gradient(to right, rgba(8, 174, 234, 0.5), rgba(42, 245, 152, 0.46)), url("images/hero-img.png") no-repeat;
   background-size: cover;
-  min-height: 400px;
+  min-height: 500px;
+}
+
+.section-sub-wrapper {
+  display: flex;
+  height: 500px;
+}
+
+.section--content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.section--link {
+  color: #2F2F2F;
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 5px 7px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.section--title {
+  position: absolute;
+  top: 40px;
+  left: 70px;
+  right: 70px;
+  bottom: 40px;
+  text-transform: capitalize;
+  color: #006CD1;
+  font-weight: 600;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.section--sub-title {
+  font-size: 60px;
+  text-transform: capitalize;
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 1px 1px 3px #2f2f2f5e;
+  margin-top: 40px;
+}
+
+.section--story {
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 1px 1px 3px #2f2f2f5e;
+  margin-top: 20px;
+  letter-spacing: 0.5px;
+}
+
+.img-mouse {
+  display: inline-block;
+  width: 25px;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

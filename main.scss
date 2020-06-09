@@ -1,0 +1,126 @@
+$light-black: #303134;
+$hero-height: 500px;
+
+@mixin flexItemsCenter($direction) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-family: Raleway;
+}
+
+.wrapper {
+    max-width: 1450px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    color: chocolate;
+}
+
+.logo-link__img {
+    display: inline-block;
+}
+
+.nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.header--content {
+    @include flexItemsCenter(row);
+}
+
+.nav-list {
+    @include flexItemsCenter(row);
+}
+
+.nav-list__item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.nav__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $light-black;
+    padding: 10px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.section {
+    background: linear-gradient(to right, rgba(8, 174, 234, 0.5), rgba(42, 245, 152, 0.46)),
+    url('images/hero-img.png') no-repeat;
+    background-size: cover;
+    min-height: $hero-height;
+}
+
+.section-sub-wrapper {
+    display: flex;
+    height: $hero-height;
+}
+
+.section--content {
+    @include flexItemsCenter(row);
+    height: 100%;
+    width: 100%;
+}
+
+.section--link {
+    color: #2F2F2F;
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 5px 7px;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-title-background {
+
+}
+
+.section--title {
+    position: absolute;
+    top: 40px;
+    left: 70px;
+    right: 70px;
+    bottom: 40px;
+    text-transform: capitalize;
+    color: #006CD1;
+    font-weight: 600;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.section--sub-title {
+    font-size: 60px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 500;
+    text-shadow: 1px 1px 3px #2f2f2f5e;
+    margin-top: 40px;
+}
+
+.section--story {
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 3px #2f2f2f5e;
+    margin-top: 20px;
+    letter-spacing: 0.5px;
+}
+
+.img-mouse {
+    display: inline-block;
+    width: 25px;
+    margin-top: 50px;
+}
