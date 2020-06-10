@@ -1,7 +1,7 @@
 $descriptionColor: #8D8D8D;
 $light-black: #303134;
 $hero-height: 500px;
-
+$purpleColor: #4B54FA;
 
 @mixin flexItemsCenter($direction) {
     display: flex;
@@ -119,7 +119,7 @@ $hero-height: 500px;
 .images-container {
     position: relative;
     margin-top: auto;
-    border-bottom: 4px solid #4B54FA;
+    border-bottom: 4px solid $purpleColor;
 }
 
 .c-image {
@@ -146,3 +146,93 @@ $hero-height: 500px;
 //    height: 2px;
 //    color: red;
 //}
+.section-articles {
+    border-bottom: 1px solid #EBEBEB;
+}
+
+.article-wrappers {
+    @include flexItemsCenter(row);
+    flex-wrap: wrap;
+}
+
+.article {
+    text-align: center;
+    margin: 15px;
+}
+
+.article:not(:last-child) {
+    margin-right: 20px;
+
+}
+
+.article--img {
+    display: inline-block;
+}
+
+.article--no {
+    font-family: Lato;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.article--title {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.section--cards--link {
+    border: 1px solid #E1E1E1;
+    border-radius: 50%;
+}
+
+.section--cards--link i {
+    font-size: 22px;
+    padding: 4px;
+}
+
+.section--tile {
+    color: #8D8D8D;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+}
+
+.section--heading {
+    color: #1A1A1B;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card-container {
+   grid-column-gap: 80px;
+    margin-top: 20px;
+    flex: 0.6 auto;
+}
+.card {
+    text-align: center;
+    box-shadow: 0px 0px 20px #d1d1d1;
+}
+
+.card--content {
+    padding: 20px;
+}
+
+.card--heading{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+
+.card--sub-title {
+    color: $purpleColor;
+    font-size: 22px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+

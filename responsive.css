@@ -148,8 +148,13 @@ h1 {
   .card-wrapper {
     margin-top: 20px;
   }
+
+  .card-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
-@media (max-width: 740px) {
+@media (max-width: 760px) {
   .header--content {
     display: flex;
     flex-direction: column;
@@ -221,6 +226,10 @@ h1 {
   .o-image {
     top: 34%;
     left: 42%;
+  }
+
+  .article-wrappers {
+    justify-content: center;
   }
 }
 
