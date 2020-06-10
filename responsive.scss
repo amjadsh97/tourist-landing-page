@@ -34,6 +34,15 @@ $phoneBreakpoints: 500px;
         grid-template-columns: repeat(2, 1fr);
 
     }
+
+    .c-image {
+        max-width: 400px;
+    }
+
+    .section--data {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 
 @media (max-width: $phoneBreakpoints) {
@@ -49,5 +58,39 @@ $phoneBreakpoints: 500px;
 
     .card-wrapper {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .c-image {
+        max-width: 250px;
+    }
+
+    .img-title-background {
+        max-width: 220px;
+    }
+
+    .section--title {
+        top: 18px;
+    }
+
+    .section--sub-title {
+        font-size: 40px;
+    }
+
+    .data-content {
+        height: 300px;
+    }
+
+    .section--data {
+        min-height: 0;
+    }
+
+    .images-container {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .o-image {
+        top: 34%;
+        left: 42%;
     }
 }

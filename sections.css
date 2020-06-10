@@ -77,14 +77,42 @@
 
 .data-content__title {
   color: #ffffff;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: auto;
 }
 
 .data-content__sub-title {
   color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 .c-image {
   display: block;
+}
+
+.images-container {
+  position: relative;
+  margin-top: auto;
+  border-bottom: 4px solid #4B54FA;
+}
+
+.c-image {
+  max-width: 600px;
+}
+
+.o-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  bottom: 50%;
+}
+
+.img-title-background {
+  max-width: 420px;
 }
 
 /*# sourceMappingURL=sections.css.map */

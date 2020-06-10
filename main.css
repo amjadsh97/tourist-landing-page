@@ -63,6 +63,10 @@ h1 {
   padding-bottom: 0;
 }
 
+.img-title-background {
+  max-width: 220px;
+}
+
 .section-sub-wrapper {
   display: flex;
   height: 500px;
@@ -89,7 +93,7 @@ h1 {
 
 .section--title {
   position: absolute;
-  top: 40px;
+  top: 30px;
   left: 70px;
   right: 70px;
   bottom: 40px;
