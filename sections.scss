@@ -210,10 +210,11 @@ $purpleColor: #4B54FA;
 }
 
 .card-container {
-   grid-column-gap: 80px;
+    grid-column-gap: 80px;
     margin-top: 20px;
     flex: 0.6 auto;
 }
+
 .card {
     text-align: center;
     box-shadow: 0px 0px 20px #d1d1d1;
@@ -223,7 +224,7 @@ $purpleColor: #4B54FA;
     padding: 20px;
 }
 
-.card--heading{
+.card--heading {
     margin-top: 0;
     margin-bottom: 0;
     font-weight: normal;
@@ -266,8 +267,8 @@ $purpleColor: #4B54FA;
     text-align: center;
     font-weight: 400;
     color: #ffffff;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 50px;
     text-shadow: 1px 1px 3px rgba(120, 120, 120, 0.34);
 }
 
