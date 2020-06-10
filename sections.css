@@ -208,4 +208,72 @@
   margin-bottom: 15px;
 }
 
+.section--form {
+  background: linear-gradient(to bottom, rgba(0, 229, 184, 0.7) 50%, rgba(0, 202, 220, 0.46)), url("images/img-ski.png") no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+.section--form__title {
+  font-size: 32px;
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(120, 120, 120, 0.34);
+}
+
+.section--form__sub-title {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(120, 120, 120, 0.34);
+}
+
+.form {
+  display: flex;
+}
+
+.form--input {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 22px;
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+  padding: 5px 5px 5px 14px;
+}
+
+.form--input::placeholder {
+  color: #ffffff;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.form--link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 14px 17px;
+  color: #00B0F0;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.label {
+  display: none;
+}
+
 /*# sourceMappingURL=sections.css.map */
