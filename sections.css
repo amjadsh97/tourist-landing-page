@@ -90,11 +90,12 @@
   text-transform: capitalize;
   font-weight: 500;
   margin-top: 10px;
+  line-height: 0.6;
 }
 
 .data-content__sub-title::after {
   display: block;
-  content: "--------";
+  content: "-----";
   color: transparent;
   text-decoration-line: underline;
   text-decoration-style: wavy;
@@ -191,11 +192,12 @@
   font-weight: 700;
   margin-top: 10px;
   margin-bottom: 10px;
+  line-height: 0.3;
 }
 
 .section--heading::after {
   display: block;
-  content: "--------";
+  content: "-----";
   color: transparent;
   text-decoration-line: underline;
   text-decoration-style: wavy;
