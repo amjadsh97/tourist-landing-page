@@ -28,7 +28,7 @@
 .card-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 30px;
+  grid-row-gap: 40px;
   grid-column-gap: 30px;
 }
 
@@ -335,6 +335,92 @@
 
 .link--wrapper {
   text-align: center;
+}
+
+.card--viewers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+}
+
+.card--show {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 650px;
+  background: linear-gradient(to bottom, transparent 5%, black);
+}
+
+.card--show__img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.card--show__content {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.side {
+  text-align: left;
+}
+
+.side--title {
+  color: #ffffff;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 26px;
+  text-shadow: 1px 1px 4px #00000087;
+}
+
+.side--sub-title {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.card-show__link {
+  border-radius: 50%;
+  background: linear-gradient(to bottom, #29F39A 50%, #08AEEA);
+  width: 35px;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.card-show__link i {
+  color: white;
+  text-shadow: 1px 1px 4px #00000021;
+}
+
+.card--viewers {
+  grid-row-gap: 10px;
+  grid-column-gap: 40px;
+}
+
+.section--photo {
+  background: url("images/map.png") no-repeat;
+  background-size: cover;
+  min-height: 350px;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 /*# sourceMappingURL=sections.css.map */

@@ -153,6 +153,10 @@ h1 {
     padding-left: 20px;
     padding-right: 20px;
   }
+
+  .card--viewers {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 @media (max-width: 760px) {
   .header--content {
