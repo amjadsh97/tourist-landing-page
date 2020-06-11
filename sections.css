@@ -182,7 +182,7 @@
 }
 
 .card-container {
-  grid-column-gap: 80px;
+  grid-column-gap: 40px;
   margin-top: 20px;
   flex: 0.6 auto;
 }
@@ -408,7 +408,7 @@
 }
 
 .card--viewers {
-  grid-row-gap: 10px;
+  grid-row-gap: 30px;
   grid-column-gap: 40px;
 }
 
