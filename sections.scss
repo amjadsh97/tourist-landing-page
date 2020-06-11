@@ -10,6 +10,17 @@ $purpleColor: #4B54FA;
     align-items: center;
 }
 
+@mixin underlineWavy($color) {
+    display: block;
+    content: "--------";
+    color: transparent;
+    //max-width: $width;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: $color;
+    text-align: center;
+}
+
 .categories--wrapper {
     display: flex;
 }
@@ -41,6 +52,7 @@ $purpleColor: #4B54FA;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 40px;
     grid-column-gap: 30px;
+    margin-top: 50px;
 }
 
 .card--img {
@@ -73,7 +85,7 @@ $purpleColor: #4B54FA;
     padding-top: 0;
     padding-bottom: 0;
     position: relative;
-    background-color: #6d6d6d;
+    background-color: #242424;
     background-blend-mode: multiply;
 }
 
@@ -92,7 +104,7 @@ $purpleColor: #4B54FA;
 
 .data-content {
     @include flexItemsCenter(column);
-
+    justify-content: center;
     position: relative;
     z-index: 1;
     height: $hero-height;
@@ -112,13 +124,17 @@ $purpleColor: #4B54FA;
     margin-top: 10px;
 }
 
+.data-content__sub-title::after {
+    @include underlineWavy(white);
+}
+
 .c-image {
     display: block;
 }
 
 .images-container {
     position: relative;
-    margin-top: auto;
+    margin-top: 40px;
     border-bottom: 4px solid $purpleColor;
 }
 
@@ -209,9 +225,13 @@ $purpleColor: #4B54FA;
     margin-bottom: 10px;
 }
 
+.section--heading::after {
+    @include underlineWavy($purpleColor);
+}
+
 .card-container {
     grid-column-gap: 40px;
-    margin-top: 20px;
+    margin-top: 50px;
     flex: 0.6 auto;
 }
 
@@ -364,6 +384,10 @@ $purpleColor: #4B54FA;
 
 .link--wrapper {
     text-align: center;
+}
+
+.link--container {
+    text-align: left;
 }
 
 .card--viewers {
