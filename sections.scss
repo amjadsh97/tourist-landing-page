@@ -202,7 +202,7 @@ $purpleColor: #4B54FA;
 .section--heading {
     color: #1A1A1B;
     text-transform: capitalize;
-    font-size: 20px;
+    font-size: 24px;
     text-align: center;
     font-weight: 700;
     margin-top: 10px;
@@ -259,7 +259,7 @@ $purpleColor: #4B54FA;
     text-align: center;
     font-weight: 600;
     color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(120, 120, 120, 0.34);
+    text-shadow: 1px 1px 3px rgba(120, 120, 120, 0.46);
 }
 
 .section--form__sub-title {
@@ -307,4 +307,61 @@ $purpleColor: #4B54FA;
 
 .label {
     display: none;
+}
+
+.card--coordinate {
+    @include flexItemsCenter(column);
+    padding: 40px;
+    padding-bottom: 0;
+    background-color: #F4F4F4;
+    box-shadow: none;
+}
+
+.card--img--face {
+    max-width: 100px;
+}
+
+.card--author {
+    color: $purpleColor;
+    text-transform: capitalize;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-weight: 500;
+}
+
+.card--paragraphy {
+    color: #1A1A1B;
+}
+
+.card--paragraphy::after {
+    display: block;
+    content: "”";
+    font-size: 100px;
+    font-family: sans-serif;
+}
+
+.section--action {
+    background: url('images/mountins.png') no-repeat;
+    background-size: cover;
+    min-height: 350px;
+    padding-top: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.section--action__link {
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    background: linear-gradient(to bottom, #2AF598 25%, #08AEEA);
+    padding: 10px 15px;
+    color: #ffffff;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.link--wrapper {
+    text-align: center;
 }
