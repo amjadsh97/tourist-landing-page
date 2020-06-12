@@ -1,8 +1,8 @@
 $smallScreensBreakpoints: 1500px;
 $tabletBreakpoints: 760px;
 $phoneBreakpoints: 500px;
+/////c
 
-@import "main.scss";
 @media (max-width: $smallScreensBreakpoints) {
     .section, .header, .footer--links {
         padding-left: 20px;

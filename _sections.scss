@@ -147,9 +147,7 @@ $purpleColor: #4B54FA;
     position: absolute;
     top: 50%;
     left: 50%;
-    right: 50%;
-    bottom: 50%;
-    //box-shadow: 1px 1px 4px #e2e2e2;
+    transform: translate(-50%, -50%);
 }
 
 .img-title-background {
@@ -163,37 +161,37 @@ $purpleColor: #4B54FA;
 //    height: 2px;
 //    color: red;
 //}
-.section-articles {
+.section-card--numberss {
     border-bottom: 1px solid #EBEBEB;
 }
 
-.article-wrappers {
+.card--numbers-wrappers {
     @include flexItemsCenter(row);
     flex-wrap: wrap;
 }
 
-.article {
+.card--numbers {
     text-align: center;
     margin: 15px;
 }
 
-.article:not(:last-child) {
+.card--numbers:not(:last-child) {
     margin-right: 20px;
 
 }
 
-.article--img {
+.card--numbers--img {
     display: inline-block;
 }
 
-.article--no {
+.card--numbers--no {
     font-family: Lato;
     font-size: 28px;
     margin-top: 16px;
     margin-bottom: 10px;
 }
 
-.article--title {
+.card--numbers--title {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
