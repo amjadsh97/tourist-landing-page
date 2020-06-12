@@ -1,6 +1,6 @@
-$smallScreensBreakpoints: 1500px;
-$tabletBreakpoints: 760px;
-$phoneBreakpoints: 500px;
+$small-screens-breakpoints: 1500px;
+$tablet-breakpoints: 760px;
+$phone-breakpoints: 500px;
 
 
 @mixin flexItemsCenter($direction) {
@@ -10,7 +10,7 @@ $phoneBreakpoints: 500px;
     align-items: center;
 }
 
-@media (max-width: $smallScreensBreakpoints) {
+@media (max-width: $small-screens-breakpoints) {
     .section, .header, .footer--links {
         padding-left: 20px;
         padding-right: 20px;
@@ -41,7 +41,7 @@ $phoneBreakpoints: 500px;
     }
 }
 
-@media (max-width: $tabletBreakpoints) {
+@media (max-width: $tablet-breakpoints) {
     .header--content {
         @include flexItemsCenter(column);
         align-items: flex-start;
@@ -63,7 +63,7 @@ $phoneBreakpoints: 500px;
 
 }
 
-@media (max-width: $phoneBreakpoints) {
+@media (max-width: $phone-breakpoints) {
     .header--content {
         @include flexItemsCenter(column);
         align-items: flex-start;
