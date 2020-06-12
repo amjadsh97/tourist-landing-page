@@ -161,37 +161,37 @@ $purpleColor: #4B54FA;
 //    height: 2px;
 //    color: red;
 //}
-.section-card--numberss {
+.section-articles {
     border-bottom: 1px solid #EBEBEB;
 }
 
-.card--numbers-wrappers {
+.article-wrappers {
     @include flexItemsCenter(row);
     flex-wrap: wrap;
 }
 
-.card--numbers {
+.card--number {
     text-align: center;
     margin: 15px;
 }
 
-.card--numbers:not(:last-child) {
+.card--number:not(:last-child) {
     margin-right: 20px;
 
 }
 
-.card--numbers--img {
+.card--number--img {
     display: inline-block;
 }
 
-.card--numbers--no {
+.card--number--no {
     font-family: Lato;
     font-size: 28px;
     margin-top: 16px;
     margin-bottom: 10px;
 }
 
-.card--numbers--title {
+.card--number--title {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
