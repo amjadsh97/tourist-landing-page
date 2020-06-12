@@ -1,6 +1,4 @@
-@import "_footer.scss";
-@import "_sections.scss";
-@import "_responsive.scss";
+
 
 $light-black: #303134;
 $hero-height: 500px;
@@ -140,3 +138,7 @@ h1 {
     width: 25px;
     margin-top: 50px;
 }
+
+@import "_sections.scss";
+@import "_footer.scss";
+@import "_responsive.scss";
